@@ -16,29 +16,28 @@
   <body>
       
       <div class= "container">
-          <!-- for small screens -->
+          <!-- flex lets bootstrap grid system workout the width of various elements -->
         <div class= "row" style="background:lightblue">
-            <div class="col-sm-6">col-sm-6</div>
-            <div class="col-sm-6">col-sm-6</div>
+            <div class="col-md">col-md</div>
+            <div class="col-md">col-md</div>
         </div>
 
-        <!-- for medium to large screens-->
-        <div class= "row" style="background:pink">
-            <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>
-            <div class="col-md-6 col-lg-3">col-sm-6 col-lg-3</div>                      
+        <!-- align content -->
+        <div class= "row justify-content-md-center">
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-2">col-md-2</div>
+            <div class="col-md-2">col-md-2</div>
+        </div>
+       
+        <!-- order content -->
+        <div class= "row justify-content-md-end" style="background:pink" >
+            <div class="col-md-2 flex-last">1. col-md-2</div>
+            <div class="col-md-2" >2. col-md-2</div>
+            <div class="col-md-2 flex-first">4. col-md-2</div>
         </div>
 
-        <!-- without specifying screen sizes-->
-        <div class= "row" style="background:pink">
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>
-                <div class="col-3">col-3</div>                      
-            </div>
       </div>
-      
     
 
 
